@@ -36,7 +36,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('KindaCode.com'),
+        title: const Text('NumberPad'),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
