@@ -23,8 +23,8 @@ class MyApp extends StatelessWidget {
                 children: <Widget>[
                   Image.network(
                     'https://picsum.photos/500/500?random=$index',
-                    width: 100,
-                    height: 100,
+                    width: 200,
+                    height: 160,
                   ),
                   Text(
                     'Image $index',

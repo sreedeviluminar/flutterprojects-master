@@ -70,7 +70,7 @@ class _HomePage extends State<HomePage>{
                 ));
               }
           ),
-          Divider(thickness: 1.0,),
+          Divider(thickness: 10.0,),
           ListTile(
             title: Text("Close"),
             leading: Icon(Icons.cancel),

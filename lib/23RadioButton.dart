@@ -38,7 +38,7 @@ class MyRadioOption<T> extends StatelessWidget {
       decoration: ShapeDecoration(
         shape: CircleBorder(
           side: BorderSide(
-            color: Colors.black,
+            color: Colors.red,
           ),
         ),
         color: isSelected ? Colors.teal : Colors.white,

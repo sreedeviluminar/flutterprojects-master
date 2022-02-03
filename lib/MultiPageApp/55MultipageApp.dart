@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutterprojects/MultiPageApp/Second.dart';
 import 'package:flutterprojects/MultiPageApp/Third.dart';
 
-
-
 void main() {
   runApp(MaterialApp(
     initialRoute: '/',

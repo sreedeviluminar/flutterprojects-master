@@ -55,6 +55,14 @@ class _MyHomePageState extends State<MyHomePage> {
             label: 'News',
             icon: Icon(Icons.library_books),
           ),
+          BottomNavigationBarItem(
+            label : 'copy',
+            icon: Icon(Icons.file_copy),
+          ),
+          BottomNavigationBarItem(
+            label: 'Paste',
+            icon: Icon(Icons.paste),
+          ),
         ],
       ),
     );
@@ -63,7 +71,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
 ThemeData _buildShrineTheme() {
   final ThemeData base = ThemeData.light();
-  return base.copyWith(colorScheme: _shrineColorScheme,
+  return base.copyWith(
+    colorScheme: _shrineColorScheme,
     textTheme: _buildShrineTextTheme(base.textTheme),
   );
 }
@@ -103,15 +112,15 @@ const ColorScheme _shrineColorScheme = ColorScheme(
   brightness: Brightness.light,
 );
 
-const Color shrinePink50 = Color(0xFFFEEAE6);
-const Color shrinePink100 = Color(0xFFFEDBD0);
-const Color shrinePink300 = Color(0xFFFBB8AC);
-const Color shrinePink400 = Color(0xFFEAA4A4);
+const Color shrinePink50 = Color(0xA60073E8);
+const Color shrinePink100 = Color(0xFF0D7FDE);
+const Color shrinePink300 = Color(0xFF5140E3);
+const Color shrinePink400 = Color(0xFF04168E);
 
-const Color shrineBrown900 = Color(0xFF442B2D);
-const Color shrineBrown600 = Color(0xFF7D4F52);
+const Color shrineBrown900 = Color(0xFF033C6D);
+const Color shrineBrown600 = Color(0xFF1408D5);
 
-const Color shrineErrorRed = Color(0xFFC5032B);
+const Color shrineErrorRed = Color(0xFF124197);
 
 const Color shrineSurfaceWhite = Color(0xFFFFFBFA);
 const Color shrineBackgroundWhite = Colors.white;

@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
     const appTitle = 'Form Styling Demo';
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+
       title: appTitle,
       home: Scaffold(
         appBar: AppBar(
@@ -30,7 +31,7 @@ class MyCustomForm extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+          padding: EdgeInsets.all(20),
           child: TextField(
             decoration: InputDecoration(
               border: OutlineInputBorder(),
@@ -39,7 +40,7 @@ class MyCustomForm extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+          padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 16),
           child: TextFormField(
             decoration: const InputDecoration(
               border: UnderlineInputBorder(),

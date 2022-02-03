@@ -40,7 +40,7 @@ class FormValidationExample extends StatelessWidget with InputValidationMixin {
                   decoration: InputDecoration(
                     labelText: "Password",
                   ),
-                  maxLength: 6,
+                  maxLength: 8,
                   obscureText: true,
                   validator: (password) {
                     if (isPasswordValid(password!))

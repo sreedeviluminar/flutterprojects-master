@@ -41,11 +41,11 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             Text(
               'GoogleFontssssssss!!!!!!!!',
-              style: GoogleFonts.aBeeZee(textStyle: Theme.of(context).textTheme.headline3),
+              style: GoogleFonts.shadowsIntoLight(textStyle: Theme.of(context).textTheme.headline3),
             ),
             Text(
               'Haiii alllllll!!!!!!!',
-              style: GoogleFonts.anticSlab(textStyle: headline4),
+              style: GoogleFonts.adventPro(textStyle: headline4),
             ),
           ],
         ),

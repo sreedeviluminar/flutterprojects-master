@@ -40,7 +40,8 @@ class _HomePageState extends State<HomePage> {
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(20),
-          child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+          child: Column
+            (crossAxisAlignment: CrossAxisAlignment.start,
               children: [
             Text(
               'Choose your hobbies:',

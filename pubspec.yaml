@@ -53,6 +53,8 @@ dependencies:
   flutter_speed_dial: ^4.6.6
   wakelock: ^0.5.6
   http: ^0.13.4
+  sqflite: ^2.0.2
+  path_provider: ^2.0.8
 
 
   # The following adds the Cupertino Icons font to your application.
