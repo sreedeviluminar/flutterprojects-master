@@ -30,8 +30,7 @@ class SQLHelper {
     final db = await SQLHelper.db();
 
     final data = {'title': title, 'description': descrption};
-    final id = await db.insert('items', data,
-        conflictAlgorithm: sql.ConflictAlgorithm.replace);
+    final id = await db.insert('items', data, conflictAlgorithm: sql.ConflictAlgorithm.replace);
     return id;
   }
 
@@ -59,8 +58,7 @@ class SQLHelper {
       'createdAt': DateTime.now().toString()
     };
 
-    final result =
-    await db.update('items', data, where: "id = ?", whereArgs: [id]);
+    final result = await db.update('items', data, where: "id = ?", whereArgs: [id]);
     return result;
   }
 
