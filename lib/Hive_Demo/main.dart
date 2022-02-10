@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage> {
 
   // Get all items from the database
   void _refreshItems() {
-    final data = _shoppingBox.keys.map((key) {
+      final data = _shoppingBox.keys.map((key) {
       final value = _shoppingBox.get(key);
       return {"key": key, "name": value["name"], "quantity": value['quantity']};
     }).toList();

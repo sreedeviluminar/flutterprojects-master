@@ -55,7 +55,6 @@ class MyHomePage extends StatelessWidget {
   }
 
   // Button onPressed methods
-
   void _insert() async {
     // row to insert
     Map<String, dynamic> row = {

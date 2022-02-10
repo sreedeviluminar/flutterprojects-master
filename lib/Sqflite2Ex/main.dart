@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'sql_helper.dart';
 
 void main() {
@@ -14,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       // Remove the debug banner
         debugShowCheckedModeBanner: false,
-        title: 'Kindacode.com',
+        title: 'Sqlite',
         theme: ThemeData(
           primarySwatch: Colors.orange,
         ),
@@ -42,7 +41,6 @@ class _HomePageState extends State<HomePage> {
       _isLoading = false;
     });
   }
-
   @override
   void initState() {
     super.initState();
