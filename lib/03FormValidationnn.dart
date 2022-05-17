@@ -8,8 +8,7 @@ void main() {
 }
 
 class FormValidationExample extends StatelessWidget with InputValidationMixin {
-
-  final formGlobalKey = GlobalKey <FormState>();
+  final formGlobalKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -23,11 +22,9 @@ class FormValidationExample extends StatelessWidget with InputValidationMixin {
             key: formGlobalKey,
             child: Column(
               children: [
-                const SizedBox(height: 50),
+                const SizedBox(height: 100),
                 TextFormField(
-                  decoration: InputDecoration(
-                      labelText: "Email"
-                  ),
+                  decoration: InputDecoration(labelText: "Email"),
                   validator: (email) {
                     if (isEmailValid(email!))
                       return null;
@@ -66,11 +63,11 @@ class FormValidationExample extends StatelessWidget with InputValidationMixin {
 }
 
 mixin InputValidationMixin {
-
-  bool isPasswordValid(String password) => password.length == 6;
+  bool isPasswordValid(String password) => password.length == 4;
 
   bool isEmailValid(String email) {
-    String pattern = r'^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$';
+    String pattern =
+        r'^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$';
     RegExp regex = RegExp(pattern);
     return regex.hasMatch(email);
   }

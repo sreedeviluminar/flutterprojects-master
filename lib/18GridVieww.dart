@@ -39,7 +39,7 @@ class GridViewww extends StatelessWidget {
                     fit: BoxFit.cover,
                   ),
                   borderRadius:
-                  BorderRadius.all(Radius.circular(20.0),),
+                  BorderRadius.all(Radius.circular(100.0),),
                 ),
               ),
             );

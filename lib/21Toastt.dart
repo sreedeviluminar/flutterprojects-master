@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+
 void main() {
   runApp(MyApp());
 }
-class MyApp extends StatelessWidget {
 
+class MyApp extends StatelessWidget {
 // This widget is the
 // root of your application.
   @override
@@ -24,24 +25,25 @@ class MyHomePage extends StatefulWidget {
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
+
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title:Text("This is a Toast"),
+        title: Text("This is a Toast"),
         backgroundColor: Colors.grey,
       ),
-      body:Center(
+      body: Container(
           child: ElevatedButton(
-            style: ElevatedButton.styleFrom(primary: Colors.green),
-              child: Text("Show toast",style: TextStyle(color: Colors.white)),
-              onPressed: (){
-                Fluttertoast.showToast(msg: "Message sent",
-                  backgroundColor: Colors.grey,
+              style: ElevatedButton.styleFrom(primary: Colors.blue),
+              child: Text("Show toast", style: TextStyle(color: Colors.white)),
+              onPressed: () {
+                Fluttertoast.showToast(
+                  msg: "Message sent",
+                  gravity: ToastGravity.CENTER
                 );
-            })
-      ),
+              })),
     );
   }
 }

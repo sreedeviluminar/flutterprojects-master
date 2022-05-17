@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
             duration: 3000,
             splash: Icons.home,
             nextScreen: MainScreen(),
-            splashTransition: SplashTransition.rotationTransition,
+            splashTransition: SplashTransition.sizeTransition,
             backgroundColor: Colors.brown
         )
     );

@@ -3,7 +3,7 @@ import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 //List of Cards with size
 List<StaggeredTile> _cardTile = <StaggeredTile>[
-  StaggeredTile.count(2, 3),
+  StaggeredTile.count(2, 4),
   StaggeredTile.count(2, 2),
   StaggeredTile.count(2, 3),
   StaggeredTile.count(2, 2),

@@ -24,7 +24,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   // Generate a list of available hobbies here
   List<Map> availableHobbies = [
-    {"name": "Foobball", "isChecked": false},
+    {"name": "Football", "isChecked": true},
     {"name": "Baseball", "isChecked": false},
     {"name": "Video Games", "isChecked": false,},
     {"name": "Readding Books", "isChecked": false},
@@ -48,8 +48,6 @@ class _HomePageState extends State<HomePage> {
               style: TextStyle(fontSize: 24),
             ),
             SizedBox(height: 10),
-            Divider(),
-            SizedBox(height: 10),
 
             // The checkboxes will be here
             Column(
@@ -65,7 +63,7 @@ class _HomePageState extends State<HomePage> {
                 }).toList()),
 
             // Display the result here
-            SizedBox(height: 10),
+            SizedBox(height: 30),
             Divider(),
             SizedBox(height: 10),
             Wrap(

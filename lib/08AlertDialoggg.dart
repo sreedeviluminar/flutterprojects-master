@@ -21,7 +21,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
 /// This is the stateless widget that the main application instantiates.
 class MyStatelessWidget extends StatelessWidget {
   const MyStatelessWidget({Key? key}) : super(key: key);
@@ -34,9 +33,9 @@ class MyStatelessWidget extends StatelessWidget {
         builder: (BuildContext context) => AlertDialog(
           title: Row(
             children:[
-              Image.network('https://cdn-icons-png.flaticon.com/512/1828/1828527.png',width: 30,height: 30,),
-              Text('AlertDialog Title'),],),
-          content: const Text('AlertDialog description'),
+              Image.network('https://cdn-icons-png.flaticon.com/512/1828/1828527.png',width: 20,height: 20,),
+              Text('Exit..?'),],),
+          content: const Text('Do you want to Exit?'),
           actions: <Widget>[
             TextButton(
               onPressed: () => Navigator.pop(context, 'Cancel'),
