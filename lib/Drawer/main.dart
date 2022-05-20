@@ -3,7 +3,5 @@ import 'package:flutterprojects/Drawer/screens/homepage.dart';
 
 void main() => runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
-    home: HomePage(),
-)
-);
-
+      home: HomePage(),
+    ));

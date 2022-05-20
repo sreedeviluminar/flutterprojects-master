@@ -21,9 +21,14 @@ class _HomePage extends State<HomePage> {
         appBar: AppBar(
           title: Text("Navigation Drawer"),
         ),
-        drawer: new Drawer(
+        drawer: Theme(
+        data: Theme.of(context).copyWith(
+    canvasColor: Colors.transparent,
+    ),
+        child:Drawer(
+
             child: ListView(
-          children: <Widget>[
+            children: <Widget>[
             UserAccountsDrawerHeader(
               accountName: Text("John Doe"),
               accountEmail: Text("johndoe@email.com"),
@@ -31,7 +36,8 @@ class _HomePage extends State<HomePage> {
                   child: CircleAvatar(
                     backgroundImage: NetworkImage(mainProfilePic),
                   ),
-                  onTap: () => print("Current User")),
+                  onTap: () => print("Current User")
+              ),
               decoration: BoxDecoration(
                 color: Colors.lightGreenAccent,
               ),
@@ -73,6 +79,7 @@ class _HomePage extends State<HomePage> {
               onTap: () => Navigator.of(context).pop(),
             ),
           ],
-        )));
+        )))
+    );
   }
 }
